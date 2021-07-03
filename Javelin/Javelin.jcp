@@ -2,7 +2,7 @@
 
 <project>
 	<settings>
-		<label>JavelinGame</label>
+		<label>Javelin</label>
 		<root_path>\</root_path>
 		<output_path>classes\</output_path>
 		<source_path>src\</source_path>
@@ -19,7 +19,7 @@
 			<applet_ref/>
 			<debugger_ref/>
 			<param/>
-			<run>JavelinGame</run>
+			<run/>
 			<verify>true</verify>
 		</runtime>
 	</runtimes>
@@ -30,7 +30,7 @@
 				<path>src</path>
 			</folderitem>
 			<fileitem>
-				<path>src\JavelinGame.java</path>
+				<path>src\Javelin.java</path>
 				<folder>src</folder>
 			</fileitem>
 		</include>

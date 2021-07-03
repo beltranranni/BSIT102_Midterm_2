@@ -1,38 +1,31 @@
 import java.util.*;
 import java.text.*;
 
-public class JAV {
-    
+public class JavelineParado {
+
     public static void main(String[] args) {
-        String p1,p2,p3,p4;
+        String player1,player2,player3,player4;
         Scanner scan = new Scanner(System.in);
         double max = 150;
         double min = 50;
         Random rand = new Random();
         NumberFormat formatter = new DecimalFormat("#0.00");
-        
-        System.out.println("Welcome to the Javelin Game");
-        System.out.println(" ");
-        
+        System.out.println("Javelin Game");
         System.out.print("Please enter Player 1 Name: ");
-        p1 = scan.nextLine();
+        player1 = scan.nextLine();
         System.out.print("Please enter Player 2 Name: ");
-        p2 = scan.nextLine();
+        player2 = scan.nextLine();
         System.out.print("Please enter Player 3 Name: ");
-        p3 = scan.nextLine();
+        player3 = scan.nextLine();
         System.out.print("Please enter Player 4 Name: ");
-        p4 = scan.nextLine();
-        
-        System.out.println(" ");
-        System.out.println(" ");
-        
+        player4 = scan.nextLine();
         double first = rand.nextDouble() * (max - min) + min;
-        System.out.println("Player 1: " + p1 + " throws at "  + formatter.format(first) + "m");
+        System.out.println("Player 1: " + player1 + " throws at "  + formatter.format(first) + "m");
         double second = rand.nextDouble() * (max - min) + min;
-        System.out.println("Player 2: " + p2 + " throws at "  + formatter.format(second) + "m");
+        System.out.println("Player 2: " + player2 + " throws at "  + formatter.format(second) + "m");
         double third = rand.nextDouble() * (max - min) + min;
-        System.out.println("Player 3: " + p3 + " throws at "  + formatter.format(third) + "m");
+        System.out.println("Player 3: " + player3 + " throws at "  + formatter.format(third) + "m");
         double fourth = rand.nextDouble() * (max - min) + min;
-        System.out.println("Player 4: " + p4 + " throws at "  + formatter.format(fourth) + "m");
+        System.out.println("Player 4: " + player4 + " throws at "  + formatter.format(fourth) + "m");
     }
 }

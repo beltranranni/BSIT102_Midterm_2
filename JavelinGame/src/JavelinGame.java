@@ -1,46 +1,53 @@
-/**
- * @(#)JavelinGame.java
- *
- * JavelinGame application
- *
- * @author 
- * @version 1.00 2019/9/10
- */
- import java.util.Scanner;
- import java.lang.Math;
- import java.util.Random;
- import java.text.DecimalFormat;
- 
+
+import java.util.*;
+import java.text.*;
+import java.util.Scanner;
+
 public class JavelinGame {
     
-
     public static void main(String[] args) {
     	
-    	Scanner scan = new Scanner(System.in);
-    	
-    	System.out.println("Enter your name Player1");
-    	String Player1 = scan.nextLine();
-    	System.out.println("Enter your name Player2");
-    	String Player2 = scan.nextLine();
-    	System.out.println("Enter your name Player3");
-    	String Player3 = scan.nextLine();
-    	System.out.println("Enter your name Player4");
-    	String Player4 = scan.nextLine();
-    	
-    	DecimalFormat d = new DecimalFormat("#.00");
-    	
-    	double minrange = 50.00;
-    	double maxrange = 150.00;
-    	double w = (Math.random()*((maxrange - minrange)+1))+minrange;
-    	double x = (Math.random()*((maxrange - minrange)+1))+minrange;
-    	double y = (Math.random()*((maxrange - minrange)+1))+minrange;
-    	double z = (Math.random()*((maxrange - minrange)+1))+minrange;
-    	
-	System.out.println();
+	String P1, P2, P3, P4;
+		
+	Scanner scan  = new Scanner(System.in);
+		
+		double max = 150;
+		double min = 50;
+		
+		Random rand = new Random();
+		
+		NumberFormat formatter = new DecimalFormat("#0.00");
+
+System.out.println("\nWelcome To Javeline Game");
+	    
+	System.out.println("\nPlease Enter the Name of the Player/s");
+		System.out.print("\nEnter Player 1: ");
+		P1 = scan.nextLine();
 	
-	System.out.println("Player1: " + Player1 + " thrown the javelin at " + d.format(w) + " meters.");
-	System.out.println("Player2: " + Player2 + " thrown the javelin at " + d.format(x) + " meters.");
-	System.out.println("Player3: " + Player3 + " thrown the javelin at " + d.format(y) + " meters.");
-	System.out.println("Player4: " + Player4 + " thrown the javelin at " + d.format(z) + " meters.");
+		System.out.print("Enter Player 2: ");	
+		P2 = scan.nextLine();
+		
+		System.out.print("Enter Player 3: ");	
+		P3 = scan.nextLine();
+
+		System.out.print("Enter Player 4: ");	
+		P4 = scan.nextLine();
+	   
+		
+		double throw1 = rand.nextDouble() * (max - min) + min;
+	System.out.println("\nPlayer 1: " + P1 + " throws at " + formatter.format(throw1) + " meters");
+		
+		double throw2 = rand.nextDouble() * (max - min) + min;
+	System.out.println("Player 2: " + P2 + " throws at " + formatter.format(throw2) + " meters");
+		
+		double throw3 = rand.nextDouble() * (max - min) + min;
+	System.out.println("Player 3: " + P3 + " throws at " + formatter.format(throw3) + " meters");
+		
+		double throw4 = rand.nextDouble() * (max - min) + min;
+	System.out.println("Player 4: " + P4 + " throws at " + formatter.format(throw4) + " meters");
+		
+
+System.out.println("\nEnd of Game. Thank You!");
+
     }
 }

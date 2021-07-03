@@ -1,49 +1,41 @@
 import java.util.Random;
 import java.util.Scanner;
-
-// CREATED BY NICOLE C. ERASGA BSIT - 102 
-public class JavelinGame
-{
-	public static void main (String [] args)
-	{
-		Scanner PlayerName = new Scanner(System.in);
-		
-		// Input Player Name Here:
-		String Player1,Player2,Player3,Player4;	
-		System.out.print("What is Player 1 name:? ");
-		Player1=PlayerName.nextLine();
-		System.out.print("What is Player 2 name:? ");
-		Player2=PlayerName.nextLine();
-		System.out.print("What is Player 3 name:? ");
-		Player3=PlayerName.nextLine();
-		System.out.print("What is Player 4 name:? ");
-		Player4=PlayerName.nextLine();
-			
-		// Random with Min and Max
-		Random nicsRandom = new Random();
-		int rangeMin = 50;
-		int rangeMax = 130;
-		
-		// Randomize the throw
-		double RandomThrow1,RandomThrow2,RandomThrow3,RandomThrow4;
-		RandomThrow1 = rangeMin + (rangeMax - rangeMin) * nicsRandom.nextDouble();  
-	 	RandomThrow2 = rangeMin + (rangeMax - rangeMin) * nicsRandom.nextDouble();
-		RandomThrow3 = rangeMin + (rangeMax - rangeMin) * nicsRandom.nextDouble();
-		RandomThrow4 = rangeMin + (rangeMax - rangeMin) * nicsRandom.nextDouble();
-		
-		// Format Double to 2 decimal points
-		double InitialDistance = 20;		
-		String RandomFormat1,RandomFormat2,RandomFormat3,RandomFormat4;
-		RandomFormat1 = String.format("%.2f" , RandomThrow1 += InitialDistance );
-		RandomFormat2 = String.format("%.2f" , RandomThrow2 += InitialDistance);
-		RandomFormat3 = String.format("%.2f" , RandomThrow3 += InitialDistance );
-		RandomFormat4 = String.format("%.2f" , RandomThrow4 += InitialDistance);
-		
-		// Print the output of 4 players
-		System.out.println("Player 1: " +Player1 + " throws at " + RandomFormat1  +" meters");
-		System.out.println("Player 2: " +Player2 + " throws at " + RandomFormat2  +" meters");
-		System.out.println("Player 3: " +Player3 + " throws at " + RandomFormat3  +" meters");
-		System.out.println("Player 4: " +Player4 + " throws at " + RandomFormat4  +" meters");
-				
-	}	
+import java.text.DecimalFormat;;
+class javelinGame {
+    
+    public static void main(String[] args) {
+    	Scanner a = new Scanner(System.in);
+    	Random b = new Random();
+    	DecimalFormat c = new DecimalFormat("#.##");
+    		double min = 50.0;
+    		double max = 130.0;
+    			double rand1 = min + (max - min) * b.nextDouble();
+    			double rand2 = min + (max - min) * b.nextDouble();
+    			double rand3 = min + (max - min) * b.nextDouble();
+    			double rand4 = min + (max - min) * b.nextDouble();
+    				double throw1 = 20.00;
+    				
+    	
+    	System.out.println("Enter Player 1 Name: ");
+    	String player1 = a.nextLine();
+    	
+    	System.out.println("Enter Player 2 Name: ");
+    	String player2 = a.nextLine();
+    	
+    	System.out.println("Enter Player 3 Name: ");
+    	String player3 = a.nextLine();
+    	
+    	System.out.println("Enter Player 4 Name: ");
+    	String player4 = a.nextLine();
+    	
+    		System.out.printf("Player 1:" + player1 + " throw at " + String.format("%.2f",throw1 + rand1)+"m");
+    	System.out.println("");
+    		System.out.printf("Player 2:" + player2 + " throw at " + String.format("%.2f",throw1 + rand2)+"m");
+    	System.out.println("");
+    		System.out.printf("Player 3:" + player3 + " throw at " + String.format("%.2f",throw1 + rand3)+"m");
+    	System.out.println("");
+    		System.out.printf("Player 4:" + player4 + " throw at " + String.format("%.2f",throw1sad
+    			 + rand4)+"m");
+    	System.out.println("");
+    }
 }

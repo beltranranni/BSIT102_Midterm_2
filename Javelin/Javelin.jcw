@@ -2,18 +2,16 @@
 
 <workspace>
 	<settings>
-		<label>JavelinGame</label>
-		<id>31</id>
-		<version>0</version>
+		<label>Javelin</label>
 	</settings>
 	<users>
 		<user>
-			<path>JavelinGame.jcu</path>
+			<path>Javelin.jcu</path>
 		</user>
 	</users>
 	<projects>
 		<project>
-			<path>JavelinGame.jcp</path>
+			<path>Javelin.jcp</path>
 		</project>
 	</projects>
 </workspace>
